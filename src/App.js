@@ -103,10 +103,8 @@ const Preview = props => {
   );
 }
 
-const placeholder = `#Welcome to my React Markdown Previewer!
-
-## This is a sub-heading..
-### And here's some other cool stuff:
+const placeholder =`
+# Welcome to my React Markdown Previewer\n## This is a sub-heading..\n### And here's some other cool stuff:
 Here is some code, \`<div></div>\`, between 2 backticks.
 
 \`\`\`
@@ -125,7 +123,7 @@ Or **_both!_**
 And feel free to go crazy ~~crossing stuff out~~.
 
 There's also [links](https://www.freecodecamp.com), and
-> Block Quotes!
+>Block Quotes!
 
 And if you want to get really crazy, even tables:
 
@@ -147,5 +145,6 @@ And here. | Okay. | I think we get it.
 ![React Logo w/ Text](https://goo.gl/Umyytc)
 `;
 
+ReactDOM.render(<App />, document.getElementById('root'));
 
 export default App;
